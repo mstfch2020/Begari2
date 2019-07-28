@@ -1,0 +1,393 @@
+body {
+    padding-top: 80px;
+    /* padding-bottom: 80px; */
+    background-color: rgb(249, 249, 249);
+    text-align: right;
+}
+
+nav {
+    box-shadow: 0 6px 6px 0 rgba(0, 0, 0, .16);
+}
+
+nav .user-img {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+nav .dropdown-toggle::after {
+    color: white;
+}
+
+nav .nav-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+nav .serch-input {
+    min-width: 250px;
+}
+
+.sidebar {
+    height: 100vh;
+    min-height: fit-content;
+    min-height: -moz-fit-content;
+    background: white;
+    border-left: 1px solid rgb(112, 112, 112);
+}
+body .sidebar.collapse:not(.show){
+    display: flex;
+}
+
+.sidebar>div a span.active,
+.sidebar>div a span:hover,
+.content .user-detail span {
+    background-color: rgb(66, 159, 212) !important;
+    color: white !important;
+}
+
+.sidebar>div a span:hover {
+    transition: background-color .5s ease;
+}
+
+.sidebar>div a span.active i,
+.sidebar>div a span:hover i {
+    color: white !important;
+}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+    left: unset;
+    right: 0;
+}
+
+.content>div:nth-child(2) {
+    margin-right: 236px;
+    padding-left: 6em;
+}
+
+.content .accused-accused,
+.content .guarantee-commitment,
+.content .clearance {
+    box-shadow: 0 6px 6px 0 rgba(0, 0, 0, .18)
+}
+
+.content input[type="text"]:focus,
+.content textarea:focus {
+    box-shadow: 0 6px 6px 0 rgba(0, 0, 0, .18);
+    border-color: #1281A0;
+    outline: none !important;
+}
+
+.content .necessary-action span.label {
+    width: 9.5rem;
+    padding-left: .25rem;
+    margin-right: -15px;
+}
+
+.content .btn-primary {
+    color: #fff;
+    background-color: #1281a0;
+    border-color: #1281a0;
+}
+
+.content .form-buttons .btn-success {
+    background-color: rgb(120, 204, 81) !important;
+    border-color: rgb(120, 204, 81) !important;
+    box-shadow: 0 5px 6px 0 rgba(0, 0, 0, .39) !important;
+}
+
+.content .form-buttons .btn-success:hover {
+    box-shadow: 0px 2px 6px 2px rgba(0, 0, 0, .39) !important;
+    background-color: rgb(124, 223, 79) !important;
+}
+
+.content .form-buttons .btn-link {
+    color: rgb(112, 112, 112) !important;
+    text-decoration: none !important;
+    box-shadow: 0 5px 6px 0 rgba(0, 0, 0, .39) !important;
+    border: 1px solid rgb(112, 112, 112) !important;
+}
+
+.content .form-buttons .btn-link:hover {
+    box-shadow: 0px 2px 6px 2px rgba(0, 0, 0, .39) !important;
+}
+
+.modal ul.necessary-action-items {
+    max-height: 50vh;
+    overflow: auto;
+    padding-top: .5rem !important;
+}
+
+.modal ul.necessary-action-items li:hover,
+.modal ul.necessary-action-items li.active {
+    background: #bbdef6 !important;
+}
+
+body .modal.show .modal-dialog {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, -50%);
+    top: 50%;
+}
+
+.content .user-detail {
+    z-index: 2;
+    position: fixed;
+    margin-top: 0 !important;
+    background-color: #f9f9f9;
+}
+
+.content .user-detail {
+    margin-right: -1rem;
+}
+
+.content .custom-scroll>div:not(.active) {
+    opacity: .5;
+    box-shadow: none;
+    pointer-events: none;
+}
+
+.content .custom-scroll>div.form-buttons {
+    opacity: 1;
+    pointer-events: unset;
+}
+
+.content .custom-scroll {
+    overflow-y: hidden;
+    transition: margin .5s ease;
+}
+
+.content .custom-scroll>div.active {
+    position: relative;
+}
+
+.content .custom-scroll>div.active span.bottom-btn {
+    position: absolute;
+    height: 50vh;
+    z-index: 2;
+    content: '';
+    width: 100%;
+    top: 100%;
+    cursor: pointer;
+    right: 0;
+}
+
+.content .custom-scroll>div.active span.top-btn {
+    position: absolute;
+    height: 50vh;
+    z-index: 2;
+    content: '';
+    width: 100%;
+    bottom: 100%;
+    cursor: pointer;
+    right: 0;
+}
+
+ul.screening-organizing-child {
+    position: relative;
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+ul.screening-organizing-child .screening-organizing-child-scrollbar {
+    position: absolute;
+    width: 3px;
+    top: .5em;
+    bottom: .5em;
+    border-radius: 6px;
+    background-color: #D3D3D3;
+    right: 1.5rem;
+}
+ul.screening-organizing-child .screening-organizing-child-scrollbar-btn {
+    position: absolute;
+    width: 6px;
+    top: .5em;
+    height: 25px;
+    border-radius: 6px;
+    background-color: #429FD4;
+    right: 1.4rem;
+    z-index: 1;
+    transition: top .5s ease !important;
+}
+
+.modal-open .modal{
+    overflow: hidden !important;
+}
+
+/* custom select option */
+
+select#Type,
+select#MM,
+select#HH,
+select#Cause {
+    display: none;
+}
+
+.select {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    color: #fff;
+    width: 100%;
+    height: 38px;
+}
+
+.select-styled {
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    border: 1px solid rgb(206, 212, 218);
+    padding: 8px 15px;
+    padding-right: 30px;
+    color: rgb(73, 80, 87);
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+.select-styled:after {
+    content: "";
+    width: 11px;
+    height: 8px;
+    background-image: url(../img/left-chevron.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: transform .25s ease;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+}
+
+.select-styled:hover {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.select-styled:active,
+.select-styled.active {
+    box-shadow: 0 6px 6px 0 rgba(0, 0, 0, .18);
+    border-color: #1281A0;
+    outline: none !important;
+}
+
+.select-styled:active:after,
+.select-styled.active:after {
+    transform: translateY(-50%) rotateZ(180deg)
+}
+
+.select-options {
+    border-radius: 8px;
+    border: none !important;
+    overflow: hidden;
+    border: 0px !important;
+    background-color: white;
+    box-shadow: 0 0 5px 0 #c7c4c4;
+    display: none;
+    position: absolute;
+    top: 107%;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: white;
+}
+
+.select-options li {
+    border: none;
+    margin: 0;
+    padding: 12px 0;
+    text-indent: 15px;
+    color: rgb(73, 80, 87);
+    background-color: white;
+    -moz-transition: all 0.15s ease-in;
+    -o-transition: all 0.15s ease-in;
+    -webkit-transition: all 0.15s ease-in;
+    transition: all 0.15s ease-in;
+}
+
+.select-options li:hover {
+    color: white;
+    background: rgb(68, 155, 180);
+}
+
+/* custom scrollbar */
+/* total width */
+.scrollbar::-webkit-scrollbar {
+    background-color: #fff;
+    width: 16px
+}
+
+/* background of the scrollbar except button or resizer */
+.scrollbar::-webkit-scrollbar-track {
+    background-color: #fff
+}
+
+.scrollbar::-webkit-scrollbar-track:hover {
+    background-color: #f4f4f4
+}
+
+/* scrollbar itself */
+.scrollbar::-webkit-scrollbar-thumb {
+    background-color: #babac0;
+    border-radius: 16px;
+    border: 5px solid #fff
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover {
+    background-color: #a0a0a5;
+    border: 4px solid #f4f4f4
+}
+
+/* set button(top and bottom of the scrollbar) */
+.scrollbar::-webkit-scrollbar-button {
+    display: none
+}
+
+
+/* medias */
+@media (max-width: 992px){
+    body{
+        padding-top: 45px;
+    }
+
+    body .sidebar{
+        right: -100%;
+        transition: right .25s ease;
+        z-index: 10;
+    }
+    .content > div:nth-child(2){
+        margin-right: 0 !important;
+        padding-left: 1em;
+        padding-right: 1em !important;
+    }
+    
+    body .sidebar.show{
+        right: 0;
+    }
+
+    .fa-list{
+        transform: rotateY(180deg);
+        transition: content .5s ease;
+    }
+    .sidebar-btn.collapsed .fa-list:before{
+        content: "\f142";
+    }
+    nav .nav-title{
+        top: 0;
+        transform: translateX(-50%);
+    }
+    .content .user-detail{
+        margin-right: 0 !important;
+    }
+
+}

@@ -1,0 +1,31 @@
+html,
+body, container { height: 100%; }
+ 
+body, container {
+  display: table;
+  width: 100%;
+}
+
+header {
+  background-color:#333;
+  color:#fff;
+}
+
+.sidebar {
+  background-color:#EEE;
+  display:table-cell;
+  height:100%;
+}
+
+.main {
+  background-color:#999;
+  height:100%;
+}
+ 
+.page-row {
+  display: table-row;
+  height: 1px;
+}
+ 
+.page-row-expanded { height: 100%; }
+
